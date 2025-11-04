@@ -70,7 +70,160 @@ const DebtConsolidation = () => {
         </div>
       </section>
 
-      {/* SECTION 2: WHEN TO CONSOLIDATE */}
+      {/* SECTION 2: MAIN HERO CONTENT */}
+      <section className="bg-gradient-to-b from-mgc-yellow via-mgc-cream to-white py-16 md:py-24 px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            
+            {/* LEFT COLUMN - Content */}
+            <div>
+              {/* Eyebrow */}
+              <p className="text-sm uppercase tracking-wide text-mgc-dark-gray mb-4 font-semibold">
+                Debt Consolidation Loans
+              </p>
+              
+              {/* H2 Headline */}
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-mgc-dark-gray mb-6 leading-tight">
+                Stop Juggling Bills. One Loan. One Payment.
+              </h2>
+              
+              {/* Subheadline */}
+              <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+                Combine credit cards, medical bills, and personal loans into one affordable monthly payment with a lower interest rate. Compare offers from 100+ lenders in minutes.
+              </p>
+              
+              {/* Value Props Quick List */}
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-800"><strong>Soft credit check only</strong> – won't hurt your score</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-800"><strong>Save $200-$500/month</strong> on average</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-800"><strong>Compare 100+ lenders</strong> with one application</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-800"><strong>Rates as low as 5.99% APR</strong> vs 25%+ on credit cards</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
+                  <span className="text-gray-800"><strong>Get funded in 1-2 business days</strong></span>
+                </li>
+              </ul>
+              
+              {/* Primary CTA */}
+              <button 
+                onClick={handleCTA}
+                className="bg-mgc-gold hover:bg-mgc-yellow text-white hover:text-mgc-dark-gray text-lg font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 w-full md:w-auto flex items-center justify-center gap-2 group"
+              >
+                See My Loan Options
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              
+              <p className="text-sm text-gray-600 mt-4">
+                Free comparison. No credit score impact. Get offers in 2 minutes.
+              </p>
+              
+              {/* Trust Badges */}
+              <div className="flex flex-wrap items-center gap-6 mt-8">
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">🔒</span>
+                  <span className="text-sm font-medium text-mgc-dark-gray">Bank-Level Security</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">⚡</span>
+                  <span className="text-sm font-medium text-mgc-dark-gray">2-Minute Application</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl">💰</span>
+                  <span className="text-sm font-medium text-mgc-dark-gray">Avg $6,000+ Saved</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* RIGHT COLUMN - Visual */}
+            <div className="hidden md:block">
+              <div className="bg-white rounded-lg shadow-2xl p-6 border-2 border-mgc-gold">
+                <h3 className="text-lg font-bold text-mgc-dark-gray mb-4 text-center">
+                  Before vs After Consolidation
+                </h3>
+                
+                {/* BEFORE */}
+                <div className="mb-6">
+                  <div className="text-sm font-semibold text-gray-600 mb-3 flex items-center justify-between">
+                    <span>BEFORE: Multiple Bills</span>
+                    <span className="text-red-600">😰</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm bg-red-50 p-2 rounded border border-red-200">
+                      <span>Credit Card 1 (22% APR):</span>
+                      <span className="font-semibold text-red-600">$185/mo</span>
+                    </div>
+                    <div className="flex justify-between text-sm bg-red-50 p-2 rounded border border-red-200">
+                      <span>Credit Card 2 (24% APR):</span>
+                      <span className="font-semibold text-red-600">$142/mo</span>
+                    </div>
+                    <div className="flex justify-between text-sm bg-red-50 p-2 rounded border border-red-200">
+                      <span>Medical Bill (0% but stressful):</span>
+                      <span className="font-semibold text-red-600">$95/mo</span>
+                    </div>
+                    <div className="flex justify-between text-sm bg-red-50 p-2 rounded border border-red-200">
+                      <span>Personal Loan (18% APR):</span>
+                      <span className="font-semibold text-red-600">$128/mo</span>
+                    </div>
+                    <div className="flex justify-between pt-2 border-t-2 border-red-300 font-bold text-red-600">
+                      <span>TOTAL MONTHLY:</span>
+                      <span>$550/mo</span>
+                    </div>
+                    <div className="text-xs text-gray-600 text-center">4 payments • High stress • Avg 21% APR</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-center my-4">
+                  <div className="text-4xl text-green-500">↓</div>
+                </div>
+                
+                {/* AFTER */}
+                <div>
+                  <div className="text-sm font-semibold text-gray-600 mb-3 flex items-center justify-between">
+                    <span>AFTER: One Simple Payment</span>
+                    <span className="text-green-600">😌</span>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm bg-green-50 p-4 rounded border-2 border-green-500">
+                      <div>
+                        <div className="font-semibold text-mgc-dark-gray">Consolidated Loan (8% APR)</div>
+                        <div className="text-xs text-gray-600 mt-1">$20,000 • 5 years</div>
+                      </div>
+                      <div className="font-bold text-green-600 text-xl">$406/mo</div>
+                    </div>
+                    <div className="flex justify-between pt-2 border-t-2 border-gray-200 text-sm">
+                      <span className="text-gray-700">Monthly Savings:</span>
+                      <span className="font-bold text-green-600">+$144/mo</span>
+                    </div>
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-700">Total Interest Saved:</span>
+                      <span className="font-bold text-green-600">~$8,500</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <p className="text-center text-xs text-gray-600 mt-4 italic">
+                  Example calculation. Your savings may vary.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: WHEN TO CONSOLIDATE */}
       <section className="bg-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           
