@@ -13,7 +13,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
       colors: {
+        'mgc-yellow': 'hsl(var(--mgc-yellow))',
+        'mgc-gold': 'hsl(var(--mgc-gold))',
+        'mgc-tan': 'hsl(var(--mgc-tan))',
+        'mgc-cream': 'hsl(var(--mgc-cream))',
+        'mgc-dark-gray': 'hsl(var(--mgc-dark-gray))',
+        'mgc-light-gray': 'hsl(var(--mgc-light-gray))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
